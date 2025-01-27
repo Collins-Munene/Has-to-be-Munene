@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Has to be Munene</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: #333;
+      background-color: skyblue;
+    }
+    .logo {
+      width: 100%;
+      background-color: white;
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .logo img {
+      max-width: 200px;
+    }
+    .content {
+      padding: 20px;
+    }
+    .header {
+      margin-bottom: 30px;
+    }
+    .header h1 {
+      font-size: 3em;
+      margin-top: 20px;
+    }
+    .header p {
+      font-size: 1.2em;
+    }
+    .nav a {
+      display: inline-block;
+      margin: 10px;
+      text-decoration: none;
+      color: white;
+      background-color: #007BFF;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1.2em;
+    }
+    .nav a:hover {
+      background-color: #0056b3;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 1em;
+      color: #555;
+    }
+    .loading {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.9);
+      z-index: 9999;
+      text-align: center;
+      padding-top: 20%;
+      font-size: 1.5em;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <!-- Logo Section -->
+  <div class="logo">
+    <img src="image1.png" alt="Poster 2" class="poster">
+  </div>
+
+  <!-- Main content -->
+  <div class="content">
+    <div class="header">
+      <h1>Has to be Munene</h1>
+      <p>Creative Designs & Digital Solutions</p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav">
+      <a href="video-edits.html" onclick="showLoading()">Video Edits</a>
+      <a href="posters.html" onclick="showLoading()">Posters</a>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+      <h3>Contact Me</h3>
+      <p><strong>Phone:</strong> 0702252855</p>
+      <p><strong>Email:</strong> w.collinsmunene@gmail.com</p>
+      <p><strong>Instagram:</strong> <a href="https://instagram.com/has_to_be_munene" target="_blank">@has_to_be_munene</a></p>
+    </div>
+  </div>
+
+  <!-- Loading Screen -->
+  <div id="loading" class="loading">Loading...</div>
+
+  <script>
+    function showLoading() {
+      const loadingScreen = document.getElementById('loading');
+      loadingScreen.style.display = 'block';
+      setTimeout(() => {
+        loadingScreen.style.display = 'none';
+      }, 1500);
+    }
+  </script>
+
+  <footer>
+    <p>© 2025 Has to be Munene. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
